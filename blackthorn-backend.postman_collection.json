@@ -1,0 +1,27 @@
+{
+  "info": {
+    "_postman_id": "116cf9bd-e164-48a2-bf01-234e77c23f42",
+    "name": "blackthorn-backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Find all carts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": null
+      },
+      "response": []
+    },
+    {
+      "name": "Find one cart",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": null
+      },
+      "response": []
+    }
+  ]
+}
