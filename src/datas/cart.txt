@@ -1,0 +1,20 @@
+db.cart.insertMany( [
+      {
+    subtotal: 10,
+    discounts: 0,
+    taxes: 0,
+    total: 10,
+    items: ['620bf2a64cb185da04fb0c4d'],
+    updatedAt: new Date(),
+    createdAt: new Date()
+  },
+  {
+    subtotal: 30,
+    discounts: 0,
+    taxes: 0,
+    total: 30,
+    items: ['620bf2a64cb185da04fb0c4e', '620bf2a64cb185da04fb0c4f', '620bf2a64cb185da04fb0c50'],
+    updatedAt: new Date(),
+    createdAt: new Date()
+  },
+   ] );

@@ -10,7 +10,7 @@ const getOne = async (id: string): Promise<CartDocument> => {
       }),
     );
   }
-  const cart = await Cart.findOne({ _id: id }).populate('items').exec();
+  const cart = await Cart.findOne({ _id: id }).exec();
 
   if (!cart) {
     throw new Error(
@@ -25,7 +25,7 @@ const getOne = async (id: string): Promise<CartDocument> => {
 };
 
 const findAll = async () => {
-  return Cart.find().populate('items').sort('-createdAt').exec();
+  return Cart.find().sort('-createdAt').exec();
 };
 
 export { getOne, findAll };

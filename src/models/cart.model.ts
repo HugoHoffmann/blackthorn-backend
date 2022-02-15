@@ -30,14 +30,12 @@ const cartSchema = new Schema(
       required: true,
     },
     total: {
-      type: Schema.Types.Boolean,
-      default: true,
+      type: Schema.Types.Number,
+      required: true,
     },
     items: {
       type: Schema.Types.Array,
-      ref: 'Products',
       required: true,
-      index: true,
     },
   },
   {
@@ -46,6 +44,6 @@ const cartSchema = new Schema(
   },
 );
 
-const Cart: Model<CartDocument> = mongoose.model<CartDocument>('Cart', cartSchema);
+const Cart: Model<CartDocument> = mongoose.model<CartDocument>('cart', cartSchema);
 
 export { Cart, CartInput, CartDocument };

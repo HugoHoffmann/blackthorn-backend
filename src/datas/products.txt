@@ -1,0 +1,42 @@
+db.products.insertMany( [
+      {
+    name: 'Carr',
+    description: 'Lorem Ipsum is simply dummy text of the printing and.',
+    price: 10,
+    quantity: 20,
+    updatedAt: new Date(),
+    createdAt: new Date()
+  },
+  {
+    name: 'Carr 1',
+    description: 'Lorem Ipsum is simply dummy text of the printing and.',
+    price: 10,
+    quantity: 20,
+    updatedAt: new Date(),
+    createdAt: new Date()
+  },
+  {
+    name: 'Carr 2',
+    description: 'Lorem Ipsum is simply dummy text of the printing and.',
+    price: 10,
+    quantity: 20,
+    updatedAt: new Date(),
+    createdAt: new Date()
+  },
+  {
+    name: 'Carr 3',
+    description: 'Lorem Ipsum is simply dummy text of the printing and.',
+    price: 10,
+    quantity: 20,
+    updatedAt: new Date(),
+    createdAt: new Date()
+  },
+  {
+    name: 'Carr 4',
+    description: 'Lorem Ipsum is simply dummy text of the printing and.',
+    price: 10,
+    quantity: 20,
+    updatedAt: new Date(),
+    createdAt: new Date()
+  },
+   ] );
