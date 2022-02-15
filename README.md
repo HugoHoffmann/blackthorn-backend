@@ -21,3 +21,7 @@ vi .env
 yarn start
 ```
 The application will be launched by [Nodemon](https://nodemon.com) so it's will restart automatically on file change
+
+
+
+link to access API -> https://safe-fjord-72150.herokuapp.com/cart
