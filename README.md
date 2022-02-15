@@ -24,4 +24,4 @@ The application will be launched by [Nodemon](https://nodemon.com) so it's will 
 
 
 
-link to access API -> https://safe-fjord-72150.herokuapp.com/cart
+link to access API -> https://blackthorn-backend-hugo.herokuapp.com/cart
