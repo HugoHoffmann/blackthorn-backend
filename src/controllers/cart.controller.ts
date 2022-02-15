@@ -14,7 +14,7 @@ const getCart = async (req: Request, res: Response) => {
     const cart = await cartService.getOne(id);
 
     res.status(200).send(cart);
-  } catch (error: any) {
+  } catch (error) {
     if (error instanceof Error) {
       const { description, status } = JSON.parse(error.message);
 

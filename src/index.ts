@@ -1,5 +1,5 @@
-import express from 'express';
-import dotenv from 'dotenv';
+import * as express from 'express';
+import * as dotenv from 'dotenv';
 
 import { connectToDatabase } from './config/databaseConnection';
 import { cartRoute } from './routes/cart.route';

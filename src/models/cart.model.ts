@@ -1,4 +1,4 @@
-import mongoose, { Schema, Model, Document } from 'mongoose';
+import * as mongoose from 'mongoose';
 
 type CartDocument = Document & {
   subtotal: number;
@@ -15,26 +15,26 @@ type CartInput = {
   total: CartDocument['total'];
   items: CartDocument['items'];
 };
-const cartSchema = new Schema(
+const cartSchema = new mongoose.Schema(
   {
     subtotal: {
-      type: Schema.Types.Number,
+      type: mongoose.Schema.Types.Number,
       required: true,
     },
     discounts: {
-      type: Schema.Types.Number,
+      type: mongoose.Schema.Types.Number,
       required: true,
     },
     taxes: {
-      type: Schema.Types.Number,
+      type: mongoose.Schema.Types.Number,
       required: true,
     },
     total: {
-      type: Schema.Types.Number,
+      type: mongoose.Schema.Types.Number,
       required: true,
     },
     items: {
-      type: Schema.Types.Array,
+      type: mongoose.Schema.Types.Array,
       required: true,
     },
   },
@@ -44,6 +44,6 @@ const cartSchema = new Schema(
   },
 );
 
-const Cart: Model<CartDocument> = mongoose.model<CartDocument>('cart', cartSchema);
+const Cart: mongoose.Model<CartDocument> = mongoose.model<CartDocument>('cart', cartSchema);
 
 export { Cart, CartInput, CartDocument };

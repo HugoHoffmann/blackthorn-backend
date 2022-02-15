@@ -1,5 +1,4 @@
-import mongoose, { Schema, Model, Document } from 'mongoose';
-
+import * as mongoose from 'mongoose';
 type ProductDocument = Document & {
   name: string;
   description: string;
@@ -14,21 +13,21 @@ type ProductInput = {
   quantity: ProductDocument['quantity'];
 };
 
-const productSchema = new Schema(
+const productSchema = new mongoose.Schema(
   {
     name: {
-      type: Schema.Types.String,
+      type: mongoose.Schema.Types.String,
       required: true,
       unique: true,
     },
     description: {
-      type: Schema.Types.String,
+      type: mongoose.Schema.Types.String,
     },
     price: {
-      type: Schema.Types.Number,
+      type: mongoose.Schema.Types.Number,
     },
     quantity: {
-      type: Schema.Types.Number,
+      type: mongoose.Schema.Types.Number,
     },
   },
   {
@@ -37,6 +36,6 @@ const productSchema = new Schema(
   },
 );
 
-const Product: Model<ProductDocument> = mongoose.model<ProductDocument>('products', productSchema);
+const Product: mongoose.Model<ProductDocument> = mongoose.model<ProductDocument>('products', productSchema);
 
 export { Product, ProductInput, ProductDocument };
